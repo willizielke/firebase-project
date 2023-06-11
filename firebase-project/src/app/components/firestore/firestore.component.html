@@ -1,0 +1,39 @@
+<h1>Item Erstellung</h1>
+<div class="border">
+  <div class="grid-container2">
+    <div>Name:</div>
+    <div>
+      <input type="text" id="name" [(ngModel)]="item.name" />
+    </div>
+    <div>Beschreibung:</div>
+    <div>
+      <textarea id="description" [(ngModel)]="item.description"></textarea>
+    </div>
+    <div>URL:</div>
+    <div>
+      <input type="text" id="url" [(ngModel)]="item.url" />
+    </div>
+  </div>
+  <div class="container2">
+    <button class="right-button button" (click)="addItem()">Speichern</button>
+  </div>
+</div>
+<!--Wird angezeigt falls ein Item hinzugefügt wurde-->
+<div class="border" *ngIf="added">
+  <h3>Item wurde hinzugefügt</h3>
+  <div class="grid-container2">
+    <div>Name:</div>
+    <div>
+      <span>{{addedName}}</span>
+    </div>
+    <div>Beschreibung:</div>
+    <div>
+      <span>{{addedDescription}}</span>
+    </div>
+    <div>URL:</div>
+    <div>
+      <span>{{addedUrl}}</span>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+.grid-container > div {
+  border: 1px solid black !important;
+  padding: 10px !important;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 55% 25%;
+}
+img{
+  height: 100px;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+}

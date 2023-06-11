@@ -1,0 +1,19 @@
+<div class="body container">
+  <h1>Meine Firebase-Präsentation</h1>
+  <div class="container grid-container">
+    <div><b>Name:</b></div>
+    <div>
+      <span><b>Beschreibung:</b></span>
+    </div>
+    <div><b>Bild:</b></div>
+  </div>
+  <div class="grid-container" *ngFor="let item of myItems">
+    <div>{{ item.name }}</div>
+    <div>
+      <span>{{ item.description }}</span>
+    </div>
+    <div class="container2">
+      <img src="{{item.url}}" alt="My Image">
+      </div>
+  </div>
+</div>

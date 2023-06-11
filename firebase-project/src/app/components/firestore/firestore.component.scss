@@ -1,0 +1,29 @@
+input,
+textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.border{
+  width: 500px;
+  margin-top: 10%;
+  border: 1px solid black !important;
+  padding: 10px !important;
+}
+
+.container2 {
+  overflow: hidden; /* Clear the floats */
+  width: 500px;
+}
+
+.right-button {
+  float: right;
+}

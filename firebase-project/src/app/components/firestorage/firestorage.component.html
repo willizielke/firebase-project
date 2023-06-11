@@ -1,0 +1,26 @@
+<h1>Bild Upload</h1>
+
+<button class="button">
+  <input
+    type="file"
+    (change)="onFileSelected($event)"
+    id="fileInput"
+    style="display: none"
+  />
+  <label for="fileInput"> Bild auswählen </label>
+</button>
+<button
+  class="button"
+  [disabled]="!selectedFile"
+  [ngClass]="{ 'disabled-button': !selectedFile }"
+>
+  Upload
+</button>
+
+<div *ngIf="selectedFile">
+  {{ selectedFile.name }}
+  <img [src]="imageSrc" alt="Selected Image" />
+  <div style="margin-top: 20px;">
+    URL: ...
+  </div>
+</div>

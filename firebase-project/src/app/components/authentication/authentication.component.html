@@ -1,0 +1,13 @@
+<div class="container3">
+  <div>
+    <div *ngIf="loggedIn">
+      <button class="button" (click)="signOutClicked()">Sign Out</button>
+    </div>
+
+    <div *ngIf="!loggedIn">
+      <button class="button" (click)="signInClicked()">
+        Sign in with Google
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+button {
+  height: 100px;
+  width: 250px;
+  font-size: 15px;
+}
+
+img{
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.disabled-button {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
