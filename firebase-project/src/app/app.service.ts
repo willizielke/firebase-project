@@ -30,6 +30,16 @@ export class AppService {
     ];
     return items;
   }
+  /*   getItems(): Observable<Item[]> {
+    return this.firestore.collection<Item>('items').valueChanges();
+  }
+
+  setItem(item: Item): Promise<void> {
+    const id = this.firestore.createId();
+    const newItem: Item = { ...item, id }; // Assign a new ID to the item
+
+    return this.firestore.collection('items').doc(id).set(newItem);
+  } */
 
   setItem(item: Item): boolean {
     console.log(item);
