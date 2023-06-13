@@ -30,16 +30,14 @@ export class AppService {
     ];
     return items;
   }
-  /*   getItems(): Observable<Item[]> {
+  /* getItems(): Observable<Item[]> {
     return this.firestore.collection<Item>('items').valueChanges();
   }
 
-  setItem(item: Item): Promise<void> {
-    const id = this.firestore.createId();
-    const newItem: Item = { ...item, id }; // Assign a new ID to the item
-
-    return this.firestore.collection('items').doc(id).set(newItem);
-  } */
+  async setItem(item: Item): Promise<boolean> {
+    await this.firestore.collection('items').doc().set(item);
+    return Promise.resolve(true);
+  }*/
 
   setItem(item: Item): boolean {
     console.log(item);

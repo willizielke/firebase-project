@@ -15,5 +15,8 @@ export class MainComponent {
 
   ngOnInit(): void {
     this.myItems = this.service.getItems();
+    /*    this.service.getItems().subscribe((items) => {
+      this.myItems = items;
+    });*/
   }
 }

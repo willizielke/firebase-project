@@ -13,6 +13,7 @@
   class="button"
   [disabled]="!selectedFile"
   [ngClass]="{ 'disabled-button': !selectedFile }"
+  (click)="upload()"
 >
   Upload
 </button>
@@ -20,7 +21,7 @@
 <div *ngIf="selectedFile">
   {{ selectedFile.name }}
   <img [src]="imageSrc" alt="Selected Image" />
-  <div style="margin-top: 20px; max-width: 500px; word-wrap: break-word;">
-    <!--URL: {{ imageSrc }}-->
+  <div *ngIf="imageSrcUpload" class="url">
+    URL: {{ imageSrcUpload }}
   </div>
 </div>
