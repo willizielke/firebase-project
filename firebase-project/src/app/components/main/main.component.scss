@@ -6,10 +6,13 @@
 .grid-container {
   display: grid;
   grid-template-columns: 20% 55% 25%;
+  word-wrap: break-word;
 }
+
 img{
   height: 100px;
 }
+
 .container2 {
   display: flex;
   justify-content: center;
