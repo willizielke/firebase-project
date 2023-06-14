@@ -2,8 +2,8 @@
   <div class="buttons">
     <a routerLink="/start" class="button">Start</a>
     <a routerLink="/authentication" class="button">Login</a>
-    <a routerLink="/firestore" class="button">Item Erstellung</a>
-    <a routerLink="/firestorage" class="button">Bild Upload</a>
+    <a *ngIf="auth.user | async" routerLink="/firestore" class="button">Item Erstellung</a>
+    <a *ngIf="auth.user | async" routerLink="/firestorage" class="button">Bild Upload</a>
   </div>
   <router-outlet></router-outlet>
 </div>

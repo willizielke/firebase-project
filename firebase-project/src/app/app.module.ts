@@ -9,6 +9,13 @@ import { AuthenticationComponent } from './components/authentication/authenticat
 import { MainComponent } from './components/main/main.component';
 import { FormsModule } from '@angular/forms';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
+import { environment } from './environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +27,11 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
