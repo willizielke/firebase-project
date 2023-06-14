@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AngularFireStorage } from '@angular/fire/compat/storage';
 
 @Component({
   selector: 'app-firestorage',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class FirestorageComponent {
   test = true;
 
-  constructor() {}
+  constructor(private storage: AngularFireStorage) {}
 
   selectedFile!: File;
   imageSrc!: any;
@@ -33,7 +34,7 @@ export class FirestorageComponent {
   }
 
   upload(): void {
-    /*if (this.selectedFile) {
+    if (this.selectedFile) {
       const filePath = `uploads/${Date.now()}_${this.selectedFile.name}`;
       const task = this.storage.upload(filePath, this.selectedFile);
 
@@ -43,6 +44,6 @@ export class FirestorageComponent {
           this.imageSrcUpload = url;
         });
       });
-    }*/
+    }
   }
 }
