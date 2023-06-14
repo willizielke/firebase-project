@@ -1,5 +1,5 @@
 # Firebase E-Portfolio
-
+https://firebase.google.com/
 # Table of Contents
 - [Installation](#1-installation)
 - [Creating-a-firebase-project](#2-creating-a-firebase-project)
@@ -18,7 +18,11 @@ For this e-portfolio you will need:
 - [Gmail Account](https://www.google.com/intl/de/gmail/about/)
 - [This Repository](https://github.com/willizielke/firebase-project)
 
-After you have installed Node.js, created a Gmail Account and cloned this repository to your IDE, you have to install the node_modules with the "npm install" command. Then you should be able to start the application with "ng serve" or "npm start". If you happen to get an error, you should check if you have truly installed Node.js with the "node -v" command and if you truly have installed the node_modules (there should be a folder with "node_modules"). If you cloned this repository after the presentation, you may be getting this error: [Common-Error](#3-common-error).
+After you have installed Node.js, created a Gmail Account and cloned this repository to your IDE, you have to install angular cli with the command "npm install -g @angular/cli".   
+After that you have to install the node_modules with the "npm install" command.   
+Then you should be able to start the application with "ng serve" or "npm start".    
+If you happen to get an error, you should check if you have truly installed Node.js with the "node -v" command and if you truly have installed the node_modules (there should be a folder with "node_modules").  
+ If you cloned this repository after the presentation, you may be getting this error: [Common-Error](#3-common-error).
 <br>
 
 
